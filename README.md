@@ -15,7 +15,7 @@ This is a set of shaders for Unity3D. It maps worldspace position of a gameObjec
 The RenderTexture mask generation and re-projection happens separately from the surface shaders, so any combination of them is possible and adding new shaders is trivial without affecting the setup.
 
 ### Download
-Download the `UnityPackage` from [Releases](/Releases) to get the bare bones setup, or clone the repo for an example project.
+Download the `UnityPackage` from [Releases](/Releases) to get a clean import.
 
 ### License
 All code licensed under MIT License. Refer to [License.md](License.md) for full terms.
@@ -34,9 +34,9 @@ Pick `Lookup Mode`.
 Pick `SplatMap Resolution`
    * **32**x - **2048**x, more resolutions can be added in the `Resolution` enum.
 
-`Use Relative` enables non-power of two resolution for the splat map, based on world bounds to avoid overly stretched mask pixels. This will be calculated automatically, keeping the longest edge to selected resolution.
+`Use Relative` enables non-power of two resolution for the `RenderTexture`, based on world bounds to avoid overly stretched mask pixels. This will be calculated automatically, keeping the longest edge to selected resolution.
 
-`Fade Over Time` allows for non-permanent mask drawing - stroke fades from oldest pixel. Fade duration will be available if selected.
+`Fade Over Time` allows for non-permanent mask drawing - stroke fades from oldest pixel. `Fade Speed` will be available if selected.
 
 Add a parent `gameObject` containing all the paintable objects to `World`
 
