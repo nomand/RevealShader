@@ -7,12 +7,15 @@ This is a set of shaders for Unity3D. It maps worldspace position of a gameObjec
 ### Features:
 * Black and White to RGB texture reveal shader
 * Transparent to Opaque RGB Texture reveal shader
+* Displacement Tesselation shader
 * Auto and Manual world bounds lookup
 * Fading over time
 * Adaptive RenderTexture aspect ratio
 * Custom inpspector
 
 The RenderTexture mask generation and re-projection happens separately from the surface shaders, so any combination of them is possible and adding new shaders is trivial without affecting the setup.
+
+<img src='/PREVIEW/02.gif'/>
 
 ### Download
 Download the `UnityPackage` from [Releases](/Releases) to get a clean import.
